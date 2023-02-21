@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+        }
+        /* .header { width: 70%;}
+        .Main
+        footer {
+            width: 70%;
+        } */
+        body {
+            width: 100%;
+        }
+        /* header */
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-sizing: border-box;
+            padding-top: 40px;
+            width: 60%;
+            margin: auto;
+        }
+        .header img {
+            width: 79px; height: 79px;
+        }
+        .navigation a{
+            color: rgb(119,78,46);
+            text-decoration: none;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        .header .navigation a{
+            padding-left: 20px;
+        }
+        /* main */
+        .Main {
+            display: flex;
+            flex-direction: column;  
+            width: 100%;
+        }
+        .Main .section {
+            display: flex;
+            box-sizing: border-box;
+            width: 60%; 
+            justify-content: space-between;
+            align-items: center;
+            margin: auto;
+            margin-bottom: 60px;
+        }
+        .Main .section .opisanie {
+            width: 50%;
+            
+        }
+        .Main .section .img {
+            width: 50%;
+        }
+        p {
+            font-size: 16px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+            color: rgb(119,78,46);
+        }
+        button {
+            background-color: rgb(119,78,46);
+            border: none;
+            margin-top: 20px;
+            padding: 20px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        button a {
+            text-decoration: none;
+            color: white;
+        }
+        h1 {
+            font-size: 110px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            color: rgb(119,78,46);
+            margin-bottom: 25px;
+        }
+        span {
+            color: rgb(243,127,52);
+        }
+        /* section2 */
+        .Main .section2 {
+            background-image: url(img_background.png);
+            width: 100%;
+            padding: 0;
+        }
+        .Main .section2 .kartinki {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 50px;
+            padding-bottom: 130px;
+            width: 60%;
+            margin: auto;
+        }
+        .Main .section2 .blacks {
+            width: 31%;
+            background-color: white;
+            text-align: center;
+            padding: 30px;
+            box-sizing: border-box;
+            /* height: 462px; */
+        }
+        .Main .section2 .blacks img {
+            width: 100%;
+        }
+        /* .Main .section2 .browns {
+            width: 25%;
+            background-color: white;
+            text-align: center;
+            padding: 20px;
+            box-sizing: border-box;
+            height: 462px;
+        }
+        .Main .section2 .greens {
+            width: 25%;
+            background-color: white;
+            text-align: center;
+            padding: 20px;
+            box-sizing: border-box;
+            height: 462px; */
+        
+        h3 {
+            color: rgb(119,78,46);
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            padding: 20px;
+        }
+        h2 {
+            font-size: 72px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            text-transform: uppercase;
+            padding-top: 100px;
+            width: 60%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: auto;
+        }
+        /* section3 */
+        h4 {
+            font-size: 72px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            text-transform: uppercase;
+            color: rgb(119,78,46);
+        }
+        #title3 {
+            padding: 0;
+        }
+        ul {
+            padding: 0;
+            padding-left: 20px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+            color: rgb(119,78,46);
+        }
+        .Main .section3 {
+            display: flex;
+            box-sizing: border-box;
+            width: 60%;
+            justify-content: space-between;
+            align-items: center;
+            margin: auto;
+            margin-bottom: 100px;
+            margin-top: 100px;
+        }
+        .Main .section3 .description {
+            width: 50%;
+        }
+        /* footer */
+        footer {
+            display: flex;
+            background-color: rgb(119,78,46);
+            width: 100%;
+        }
+        footer .footer {
+            display: flex;
+            flex-direction: row;
+            margin: auto;
+            align-items: center;
+            width: 60%;
+            justify-content: space-between;
+            padding-top: 25px;
+            padding-bottom: 25px;
+        }
+        footer .footerback {
+            color: white;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 36px;
+        }
+        h2 #zagorange {
+            color: rgb(119,78,46);
+            
+        }
+        h2 span {
+            display: flex;
+            justify-content: space-between;
+            letter-spacing: 6px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="img_logoyummy.png" alt="logo">
+        <div class="navigation">
+            <a href ="#advice">Порада від Ямі</a>
+            <a href="#moi">Мої улюбленні солодощі</a>
+        </div>
+    </div>
+    <div class="Main">
+        <div class="section">
+            <div class="opisanie">
+            <h1> <span>YUMMY </span> PUG</h1>
+            <p>Всім привіт, я Ямі і я мопс, який дуже сильно полюбляє солодощі.</p> 
+            <p>Сьогодні я розкажу вам, чому саме солодощі і чому вони так важливі в нашому житті.</p>  <p>Доречі, моє ім'я з англійської мови перекладається як "Смачний".</p>
+            <br>
+            <button><a href="#moi">Мої улюбленні солодощі</a> </button>
+        </div>
+            <img src="img_dog1.png" alt="image">
+        </div>
+        <div class="section2">
+            <h2><span><a name="moi"></a> Мої </span><span>улюбленні</span> <span id="zagorange">солодощі</span></h2>
+            <div class="kartinki">
+                <div class="blacks">
+                    <img src="img_blacksweets.png" alt="black">
+                    <h3>Червоний мак</h3>
+                    <p>Пралене з додаванням карамельної крихти, пасти ядер горіхів фундука та мигдалю покрите шоколадною глазурʼю</p>
+                </div>
+                <div class="blacks">
+                    <img src="img_brownsweets.png" alt="brown">
+                    <h3>Сливки-ленивки</h3>
+                    <p>Світлі вафельні листи, поєднані молочно-вершковою начинкою та покриті глазур’ю.</p>
+            </div>
+                <div class="blacks">
+                    <img src="img_greensweets.png" alt="green">
+                    <h3>Ліщина</h3>
+                    <p>Праліне з додаванням подрібненої та тертої ліщини та мигдалю, покрите шоколадною глазур’ю.</p>
+                </div>
+            </div>
+        </div>
+        <div class="section3">
+            <div class="description">
+                <h4><span><a name="advice"></a> Порада</span> - від yummy</h4>
+                <br>
+                <p>З'ївши чергову шоколадку, ви не просто набираєте трохи додаткових калорій, але покращуєте тим самим роботу мозку, настрій і стаєте трішки добрішим. Вирішивши поласувати шоколадкою, віддавайте перевагу саме чорному шоколаду з високим вмістом какао-бобів. У цьому вигляді шоколаду менше жиру і цукру, ніж в молочному шоколаді, але зате магнію, кальцію, заліза, білка, антиоксидантів і вітамінів предостатньо.</p>
+                <br>
+                <h3 id="title3">Солодощі, які радить їсти Ямі:</h3>
+                <p>
+                    <br>
+                    <ul> 
+                        <li>Чорний шоколад</li>
+                        <li>Зефір</li>
+                        <li>Пастила</li>
+                        <li>Мармелад</li>
+                        <li>Мед</li>
+                        <li>Халва</li>
+                        <li>Цукати</li>
+                    </ul>
+                </p>
+            </div>
+                <img src="img_dog2.png" alt="image">
+        </div>
+    </div>
+    <!-- <div class="footer">Footer</div> -->
+    <footer>
+        <div class="footer">
+            <img src="img_logoyummy.png" alt="logo">
+            <div class="footerback">
+            Приєднуйся і живи зі мною у світі солодощів!
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
